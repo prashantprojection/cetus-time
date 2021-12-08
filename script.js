@@ -7,9 +7,6 @@ fetch('https://api.warframestat.us/pc/cetusCycle')
     document.getElementById("time").innerText = data.shortString;
     }
 )
-.catch(function (err){
-    console.log(err);
-})
 
 let counter = 1;
 setInterval(() => {
