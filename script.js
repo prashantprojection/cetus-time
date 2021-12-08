@@ -3,6 +3,7 @@ fetch('https://api.warframestat.us/pc/cetusCycle')
     return response.json();
 })
 .then(function (data) {
+    document.getElementById("dn").innerText = data.state;
     document.getElementById("time").innerText = data.shortString;
     }
 )
